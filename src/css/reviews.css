@@ -1,0 +1,121 @@
+.reviews-section {
+  padding-bottom: 30px;
+  padding-top: 30px;
+}
+
+.reviews-title {
+  text-align: left;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 1;
+  letter-spacing: -0.02em;
+  color: #0c0c0c;
+  margin-bottom: 24px;
+}
+.reviews-list {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+.reviews-list-item {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: column;
+  gap: 24px;
+  background-color: #f3f3f3;
+  border-radius: 30px;
+  max-width: 335px;
+  padding: 32px 36px;
+}
+
+.reviews-list-item.two {
+  display: none;
+}
+.reviews-list-item.three {
+  display: none;
+}
+
+.reviews-foto {
+  border-radius: 50%;
+}
+.reviews-list-item-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  max-width: 263px;
+}
+.reviews-subtitle {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.25;
+  letter-spacing: -0.02em;
+  text-align: center;
+  color: #0c0c0c;
+}
+.reviews-text {
+  text-align: center;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.29;
+  letter-spacing: -0.02em;
+  text-align: center;
+  color: rgba(12, 12, 12, 0.4);
+}
+
+@media only screen and (min-width: 768px) {
+  .reviews-section {
+    padding-bottom: 40px;
+    padding-top: 40px;
+  }
+  .reviews-title {
+    font-size: 48px;
+    margin-bottom: 40px;
+  }
+  .reviews-list {
+    gap: 16px;
+    flex-wrap: nowrap;
+  }
+  .reviews-list-item {
+    max-width: 344px;
+  }
+  .reviews-list-item.two {
+    display: flex;
+  }
+  .reviews-list-item-card {
+    height: 128px;
+    max-width: 272px;
+  }
+  .reviews-subtitle {
+    font-size: 18px;
+    line-height: 1.1;
+  }
+
+  .reviews-text {
+    font-size: 16px;
+    line-height: 1.25;
+  }
+}
+
+@media only screen and (min-width: 1280px) {
+  .reviews-section {
+    padding-bottom: 50px;
+    padding-top: 50px;
+  }
+  .reviews-list {
+    gap: 20px;
+  }
+  .reviews-list-item {
+    max-width: 370px;
+  }
+  .reviews-list-item.three {
+    display: flex;
+  }
+  .reviews-list-item-card {
+    max-width: 298px;
+  }
+}

@@ -1,0 +1,106 @@
+<section class="contact-us" id="contact-us">
+  <div class="container">
+    <h2 class="contact-title">Contact Us</h2>
+    <div class="contact-wrapper">
+      <div class="contact">
+        <p class="contact-text">
+          Please use the form below to contact us. Enter your name, email,
+          phone, and message and we'll get back to you shortly.
+        </p>
+        <form class="contact-form">
+          <div class="contact-field">
+            <div class="input-wrap">
+              <label for="user-name" class="contact-label">
+                <input
+                  name="user-name"
+                  id="user-name"
+                  class="contact-input contact-textarea"
+                  placeholder="Name"
+                  required
+                />
+                <span class="text-valid">Succes!</span>
+                <span class="text-invalid">Invalid name, try again</span>
+              </label>
+            </div>
+          </div>
+          <div class="contact-field">
+            <div class="input-wrap">
+              <label for="user-email" class="contact-label">
+                <input
+                  name="user-email"
+                  type="email"
+                  id="user-email"
+                  class="contact-input contact-textarea"
+                  placeholder="Email"
+                  pattern="([A-z0-9_.-]{1,})@([A-z0-9_.-]{1,}).([A-z]{2,8})"
+                  required
+                />
+                <span class="text-valid">Succes!</span>
+                <span class="text-invalid">Invalid email, try again</span>
+              </label>
+            </div>
+          </div>
+          <div class="contact-field">
+            <div class="input-wrap">
+              <label for="user-phone" class="contact-label">
+                <input
+                  name="user-phone"
+                  id="user-phone"
+                  type="tel"
+                  class="contact-input contact-textarea"
+                  placeholder="+380"
+                  pattern="^\+\d{3}-\d{2}-\d{3}-\d{2}-\d{2}$"
+                  required
+                />
+                <span class="text-valid">Succes!</span>
+                <span class="text-invalid"
+                  >Invalid phone number, try again</span
+                >
+              </label>
+            </div>
+          </div>
+          <div class="comment-field">
+            <label for="user-comment" class="comment-label">
+              <textarea
+                name="user-comment"
+                id="user-comment"
+                class="comment-input comment-textarea"
+                placeholder="Comment"
+              ></textarea>
+            </label>
+          </div>
+          <button type="submit" class="contact-btn">Send</button>
+        </form>
+      </div>
+
+      <picture class="contact-picture">
+        <source
+          srcset="
+            ./img/contact-us/contact-us-desk-min.jpg    1x,
+            ./img/contact-us/contact-us-desk@2x-min.jpg 2x
+          "
+          media="(min-width: 1280px)"
+        />
+        <source
+          srcset="
+            ./img/contact-us/contact-us-tab-min.jpg    1x,
+            ./img/contact-us/contact-us-tab@2x-min.jpg 2x
+          "
+          media="(min-width: 768px)"
+        />
+        <source
+          srcset="
+            ./img/contact-us/contact-us-mob-min.jpg    1x,
+            ./img/contact-us/contact-us-mob@2x-min.jpg 2x
+          "
+          media="(max-width: 768px)"
+        />
+        <img
+          class="contact-img"
+          src="./img/contact-us/contact-us-mob-min.jpg"
+          alt="The Watch"
+        />
+      </picture>
+    </div>
+  </div>
+</section>
